@@ -30,4 +30,6 @@ public class TouristService {
     public void delete(TouristAttraction touristAttraction){
         touristRepository.deleteAttraction(touristAttraction);
     }
+
+
 }

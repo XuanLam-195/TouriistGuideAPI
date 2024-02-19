@@ -20,9 +20,8 @@ import java.util.List;
 public class TouristController {
     TouristService touristService = new TouristService();
 
-    @GetMapping("/all")
+    @GetMapping("/alle")
     public ResponseEntity<List<TouristAttraction>> getAttractions(){
         return new ResponseEntity<>(touristService.readAttractions(), HttpStatus.OK);
     }
-
 }
